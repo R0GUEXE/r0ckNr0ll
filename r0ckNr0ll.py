@@ -12,7 +12,7 @@ time.sleep(5)
 def r0ck0n():
     txt = input("What would you like to spam?: ")
 
-    dlay = input("How long do you want the delay before the spam to be?: ")
+    dlay = input("How long do you want the delay before the spam to be? (default is 10 seconds): ")
 
     tmes = input("How many times do you want it to spam?: ")
 
@@ -20,6 +20,8 @@ def r0ck0n():
 
     if rdy == "y":
         print("r0ckin'N'r0lling!")
+        if dlay == "":
+            dlay = 10
         print(f"***(Make sure your cursor is in the right text input. YOU HAVE {dlay} SECONDS!)***")
 
     if rdy == "m":
