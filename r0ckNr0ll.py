@@ -6,7 +6,7 @@ from pyfiglet import Figlet
 
 fnt = Figlet(font="thin")
 print (fnt.renderText("r0ck'N'r0ll"))
-time.sleep(dlay)
+time.sleep(5)
 
 txt = input("What would you like to spam? ")
 
@@ -26,7 +26,7 @@ else:
     time.sleep(3)
     quit()
 
-time.sleep(10)
+time.sleep(dlay)
 for i in range(int(tmes)):
     pyautogui.typewrite(txt)
     pyautogui.press("enter")
